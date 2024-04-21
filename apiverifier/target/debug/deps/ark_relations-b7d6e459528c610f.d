@@ -1,0 +1,11 @@
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/libark_relations-b7d6e459528c610f.rmeta: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/mod.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/impl_lc.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/constraint_system.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/error.rs
+
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/libark_relations-b7d6e459528c610f.rlib: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/mod.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/impl_lc.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/constraint_system.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/error.rs
+
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/ark_relations-b7d6e459528c610f.d: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/mod.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/impl_lc.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/constraint_system.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/error.rs
+
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/lib.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/mod.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/impl_lc.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/constraint_system.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-relations-0.4.0/src/r1cs/error.rs:

@@ -1,0 +1,21 @@
+{
+  "arch": "riscv32",
+  "cpu": "generic-rv32",
+  "data-layout": "e-m:e-p:32:32-i64:64-n32-S128",
+  "eh-frame-header": false,
+  "emit-debug-gdb-scripts": false,
+  "executables": true,
+  "features": "+m",
+  "is-builtin": false,
+  "linker": "rust-lld",
+  "linker-flavor": "ld.lld",
+  "link-script": "/*\n  Copyright 2023 Risc0, Inc.\n\n  Licensed under the Apache License, Version 2.0 (the \"License\");\n  you may not use this file except in compliance with the License.\n  You may obtain a copy of the License at\n\n      http://www.apache.org/licenses/LICENSE-2.0\n\n  Unless required by applicable law or agreed to in writing, software\n  distributed under the License is distributed on an \"AS IS\" BASIS,\n  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n  See the License for the specific language governing permissions and\n  limitations under the License.\n*/\n\nOUTPUT_FORMAT(\"elf32-littleriscv\", \"elf32-littleriscv\", \"elf32-littleriscv\")\nOUTPUT_ARCH(riscv)\nENTRY(_start)\nEXTERN(__start)\n\n/* Must match risc0/zkvm/platform/src/memory.rs */\nMEMORY {\n  stack        : ORIGIN = 0x02000000, LENGTH =  16M\n  data    (RW) : ORIGIN = 0x03000000, LENGTH =  16M\n  heap         : ORIGIN = 0x04000000, LENGTH =  32M\n  prog    (X)  : ORIGIN = 0x06000000, LENGTH =  32M\n}\n\nSECTIONS {\n  .text : {\n    *(.text._start)\n    *(.text.__start)\n    *(.text*)\n    *(.rodata*)\n    *(.srodata*)\n  } >prog\n\n  .data : {\n    *(.data .data.*)\n    *(.gnu.linkonce.d.*)\n    __global_pointer$ = . + 0x800;\n    *(.sdata .sdata.* .sdata2.*)\n    *(.gnu.linkonce.s.*)\n  } >data\n\n  . = ALIGN(4);\n\n  .bss (NOLOAD) : {\n    __bss_begin = .;\n    *(.sbss*)\n    *(.gnu.linkonce.sb.*)\n    *(.bss .bss.*)\n    *(.gnu.linkonce.b.*)\n    *(COMMON)\n    . = ALIGN(4);\n    __bss_end = .;\n  } >data\n\n  __bss_size = __bss_end - __bss_begin;\n\n  __heap_start = ORIGIN(heap);\n  __heap_end = __heap_start + LENGTH(heap);\n  __heap_size = LENGTH(heap);\n\n  __stack_init$ = ORIGIN(stack) + LENGTH(stack) - 4;\n\n  /DISCARD/ : {\n    *(.rel*)\n    *(.comment)\n    *(.eh_frame)\n    *(.riscv.attributes)\n  }\n}\n",
+  "llvm-target": "riscv32",
+  "max-atomic-width": 32,
+  "os": "zkvm",
+  "panic-strategy": "abort",
+  "relocation-model": "static",
+  "singlethread": true,
+  "target-pointer-width": "32",
+  "vendor": "risc0"
+}

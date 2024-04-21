@@ -1,0 +1,11 @@
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/librisc0_zeroio-0124dc15f331d445.rmeta: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/deserialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/serialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/util.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/../README.md
+
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/librisc0_zeroio-0124dc15f331d445.rlib: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/deserialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/serialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/util.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/../README.md
+
+/home/greg/hackathons/zkAPI/apiverifier/target/debug/deps/risc0_zeroio-0124dc15f331d445.d: /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/lib.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/deserialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/serialize.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/util.rs /home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/../README.md
+
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/lib.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/deserialize.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/serialize.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/util.rs:
+/home/greg/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-zeroio-0.12.0/src/../README.md:

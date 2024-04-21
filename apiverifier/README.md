@@ -1,36 +1,26 @@
-# RISC Zero Rust Starter Template
+# zkAPI
 
-Welcome to the RISC Zero Rust Starter Template! This template is intended to
-give you a starting point for building a project using the RISC Zero zkVM.
-Throughout the template (including in this README), you'll find comments
-labelled `TODO` in places where you'll need to make changes. To better
-understand the concepts behind this template, check out the [zkVM
-Overview][zkvm-overview].
+Welcome to the zkAPI starter project for creating verified API calls. The basic use case for this is creating an Oracle that runs off provable computation rather than economic incentives. 
 
-## Quick Start
+An example of this would be a prediction market smart contract on an EVM-based chain like Ethereum or Layer 2's like Arbitrum, Base, Mantle, Optimism or zkSync. 
 
-First, make sure [rustup] is installed. The
-[`rust-toolchain.toml`][rust-toolchain] file will be used by `cargo` to
-automatically install the correct version.
+Prediction markets rely on an off-chain call to determine the outcome of what was predicted (e.g. the results of a political race, a sporting event, temperatures in some locale on some date etc.). 
 
-To build all methods and execute the method within the zkVM, run the following
-command:
+With a zkAPI a call to an API can be triggered through a smart contract that makes a call to the Risc Zero Bonsai API which in turn returns a result along with a proof that the API call was run correctly and therefore the result can be trusted (in so far as the data provider is trusted, e.g. weatherapi.com)
 
-```bash
-cargo run
-```
+## Required API key
 
-This is an empty template, and so there is no expected output (until you modify
-the code).
+This requires a Bonsai API key from Risczero.com. 
 
-### Executing the project locally in development mode
 
-During development, faster iteration upon code changes can be achieved by leveraging [dev-mode], we strongly suggest activating it during your early development phase. Furthermore, you might want to get insights into the execution statistics of your project, and this can be achieved by specifying the environment variable `RUST_LOG="[executor]=info"` before running your project.
+### Required Smart Contracts
 
-Put together, the command to run your project in development mode while getting execution statistics is:
+In order for the overall system to work, it requires integration of the contracts in the risc0-foundry-template. 
 
-```bash
-RUST_LOG="[executor]=info" RISC0_DEV_MODE=1 cargo run
+
+
+
+
 ```
 
 ### Running proofs remotely on Bonsai
